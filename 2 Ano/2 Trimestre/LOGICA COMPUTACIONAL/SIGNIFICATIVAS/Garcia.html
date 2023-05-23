@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body style="background-color: rgb(133, 133, 133);">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center ">
+                <h1 class="text-info">
+                    Familia
+                </h1>
+
+
+                <body>
+                    <button onclick="FamiliaArrays()">Clique Aqui</button>
+                    <script>
+                        function FamiliaArrays() {
+                            var Garcia = []
+                            Garcia.push("Juninho")
+                            Garcia.push("Elenir")
+                            Garcia.push("Rosan")
+                            Garcia.push("Z")
+                            alert(Garcia)
+                            Garcia[3] = "Zen"
+                            alert(Garcia)
+                            var posicao = Garcia.indexOf("Zen")
+                            Garcia.splice(posicao, 1)
+                            alert(Garcia)
+                        }
+                    </Script>
+                </body>
+
+
+</html>
+
+
+
