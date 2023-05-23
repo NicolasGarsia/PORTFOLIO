@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- DOCTYPE serve para mostrar o tipo de linguagem usada. -->
+<html lang="en">
+
+
+
+
+</head>
+<!-- Dentro de html se encontra a construção visual do site. -->
+<body style="background-color: rgb(191, 203, 203);">
+<!-- Body representa o conteudo de um documento ( Ele so pode ser usado uma vez apenas ). -->
+<div class="container-fluid">
+    <!-- Div elemento dentro do html que serve para construção de loyaout e serve tambem como armazenamento. -->
+    <div class="row">
+        <div class="col-md-12 text-center ">
+            <!-- Cada "h" representa um linha de titulo dentro do site. -->
+            <h1 class="text-info">
+                Transforme sua temperatura!
+            </h1>
+<!-- Input e usado para criar controles interativos, alem de receber dados do usuario. -->
+            <input type="number" id="temperatura" placeholder="Digite a temperatura"><br>
+            <input id="cf" type="radio" name="tipo">Celsius para Fahrenheit</input><br>
+            <input id="ck" type="radio" name="tipo">Celsius para Kelvin</input><br>
+            <input id="fc" type="radio" name="tipo">Fahrenheit para Celsius</input><br>
+            <input id="fk" type="radio" name="tipo">Fahrenheit para Kelvin</input><br>
+            <input id="kc" type="radio" name="tipo">Kelvin para Celsius</input><br>
+            <input id="kf" type="radio" name="tipo">Kelvin para Fahrenheit</input><br>
+            <!-- Button serve para criar um botão clicavel dentro do site. -->
+            <button onclick="converte()">Converter</button><br>
+            <p id="resultado">Resultado</p>
+        </div>
+    </div>
+</div>
+<script>
+// Script e o local onde vai ficar armazenado dentro do codigo as funções :
+// Função serve como local para efetuar calculos dentro do site :
+    function converte() {
+// O Var serve como variavel para o codigo :
+        var temperatura = Number(document.getElementById("temperatura").value)
+        var resultado = 0
+        // O If serve como "se", isso faz com que o codigo so execute o commando " se for aquela informação " :
+        if(document.getElementById("cf").checked){
+        resultado = temperatura * (9/5) + 32
+        // Checked e usado dentro do codigo para checar se esta correto e funcional :
+        }
+        // Else if e usado como "se não", isso faz com que "se não" for tal resultado ele efetua aquela função :
+        else if(document.getElementById("ck").checked) {
+            resultado = temperatura + 273.15
+        }
+        else if(document.getElementById("fc").checked) {
+            resultado = (temperatura - 32) * (5/9)
+        }
+        else if(document.getElementById("fk").checked) {
+            resultado = (temperatura - 32) * (5/9) + 273,15
+        }
+        else if(document.getElementById("kc").checked) {
+            resultado = temperatura - 273,15
+        }
+        else if(document.getElementById("kf").checked) {
+            resultado = (temperatura - 273,15) * (9/5) + 32
+        }
+    document.getElementById("resultado").innerHTML = resultado
+    // document.getElementById e usado para puxar um elemento dentro do codigo pelo seu id :
+}
+</script>
+</body>
+
+
+
+
+</html>
+
