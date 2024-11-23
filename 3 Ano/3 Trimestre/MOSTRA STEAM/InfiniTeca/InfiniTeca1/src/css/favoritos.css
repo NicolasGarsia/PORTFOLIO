@@ -1,0 +1,74 @@
+.nomelista {
+    margin-top: 35px;
+    font-size: 32px;
+}
+
+.containerLista, .containerLista1 {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.nomelista1 {
+    margin-top: 5px; 
+    color: black;
+    font-weight: normal;
+}
+
+.coracao {
+    width: 40px;
+    margin-right: 10px; 
+    margin-left: 10px;
+}
+
+.coracaoContainer {
+    display: flex; 
+    align-items: center; 
+    margin-top: 60px;
+}
+
+.corazon {
+    color: black;
+    font-weight: normal;
+
+}
+
+.recomendocoes{
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.reco{
+    font-size: 32px;
+}
+
+.favestant{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+.favlivroh{
+background-color: black;
+    width: 90%;
+    height: 75%;
+    margin: 10px;
+}
+
+
+.favBook1{
+    background-color: #4a4a4a;
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 380px;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 3px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    gap: 15px;
+}

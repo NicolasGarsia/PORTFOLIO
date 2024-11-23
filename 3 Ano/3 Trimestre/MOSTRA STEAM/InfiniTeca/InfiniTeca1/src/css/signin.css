@@ -1,0 +1,132 @@
+.container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    font-size: 15px;
+    color: #333;
+}
+
+.botaoLoginC {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.cadastre {
+    display: block;
+    margin-top: 15px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.signBox {
+    background: linear-gradient(to bottom, #2C3E50 60%, #B3CDE0 40%);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.caixa {
+    margin-right: 25vw;
+    width: 30vw;
+    height: 50vh;
+    background-color: #f0f0f0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
+}
+
+.signinEntrar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 130px;
+    width: 150px;
+    height: 30px;
+    background-color: #2C3E50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 40px;
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ;
+}
+
+p {
+    font-size: 10px;
+    margin-left: 20px;
+    color: black;
+}
+
+.signinCadastro {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.signinEsquecer {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.signLogo{
+    display: flex;
+}
+.signLogoBox{
+    padding-right: 50px;
+    padding-top: 115px;
+    padding-bottom: 138px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: white;
+}
